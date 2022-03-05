@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 chapter1 - 介紹 | R 語言</title>
+  <meta name="description" content="1 chapter1 - 介紹 | R 語言" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 chapter1 - 介紹 | R 語言" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 chapter1 - 介紹 | R 語言" />
+  
+  
+  
+
+<meta name="author" content="Author : Hung Hsi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="preface-前言.html"/>
+<link rel="next" href="chapter2-基本運算.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="preface-前言.html"><a href="preface-前言.html"><i class="fa fa-check"></i>Preface 前言 ?</a></li>
+<li class="chapter" data-level="1" data-path="chapter1-介紹.html"><a href="chapter1-介紹.html"><i class="fa fa-check"></i><b>1</b> chapter1 - 介紹</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter1-介紹.html"><a href="chapter1-介紹.html#rstdio-介面簡介"><i class="fa fa-check"></i><b>1.1</b> Rstdio 介面簡介</a></li>
+<li class="chapter" data-level="1.2" data-path="chapter1-介紹.html"><a href="chapter1-介紹.html#快捷鍵"><i class="fa fa-check"></i><b>1.2</b> 快捷鍵</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter2-基本運算.html"><a href="chapter2-基本運算.html"><i class="fa fa-check"></i><b>2</b> chapter2 - 基本運算</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter2-基本運算.html"><a href="chapter2-基本運算.html#資料屬性"><i class="fa fa-check"></i><b>2.1</b> 資料屬性</a><ul>
+<li class="chapter" data-level="" data-path="chapter2-基本運算.html"><a href="chapter2-基本運算.html#範例"><i class="fa fa-check"></i>範例</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="chapter2-基本運算.html"><a href="chapter2-基本運算.html#常見運算"><i class="fa fa-check"></i><b>2.2</b> 常見運算</a><ul>
+<li class="chapter" data-level="" data-path="chapter2-基本運算.html"><a href="chapter2-基本運算.html#範例-1"><i class="fa fa-check"></i>範例</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html"><i class="fa fa-check"></i><b>3</b> chapter3 - 變數和資料</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#變數"><i class="fa fa-check"></i><b>3.1</b> 變數</a><ul>
+<li class="chapter" data-level="" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#na-與-null"><i class="fa fa-check"></i>NA 與 NULL</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#向量"><i class="fa fa-check"></i><b>3.2</b> 向量</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#利用c建立向量"><i class="fa fa-check"></i><b>3.2.1</b> 利用c(…)建立向量</a></li>
+<li class="chapter" data-level="3.2.2" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#提取資料"><i class="fa fa-check"></i><b>3.2.2</b> 提取資料</a></li>
+<li class="chapter" data-level="3.2.3" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#相似用法"><i class="fa fa-check"></i><b>3.2.3</b> 相似用法</a></li>
+<li class="chapter" data-level="3.2.4" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#基本相關函數"><i class="fa fa-check"></i><b>3.2.4</b> 基本相關函數</a></li>
+<li class="chapter" data-level="3.2.5" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#注意"><i class="fa fa-check"></i><b>3.2.5</b> 注意</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#因子"><i class="fa fa-check"></i><b>3.3</b> 因子</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#利用-factor-建立因子"><i class="fa fa-check"></i><b>3.3.1</b> 利用 factor 建立因子</a></li>
+<li class="chapter" data-level="3.3.2" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#基本相關函數-1"><i class="fa fa-check"></i><b>3.3.2</b> 基本相關函數</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#列表"><i class="fa fa-check"></i><b>3.4</b> 列表</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#利用-list-建立列表"><i class="fa fa-check"></i><b>3.4.1</b> 利用 list 建立列表</a></li>
+<li class="chapter" data-level="3.4.2" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#提取資料-1"><i class="fa fa-check"></i><b>3.4.2</b> 提取資料</a></li>
+<li class="chapter" data-level="3.4.3" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#基本相關函數-2"><i class="fa fa-check"></i><b>3.4.3</b> 基本相關函數</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#data.frame"><i class="fa fa-check"></i><b>3.5</b> data.frame</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#利用-data.frame-建立資料框架"><i class="fa fa-check"></i><b>3.5.1</b> 利用 data.frame 建立資料框架</a></li>
+<li class="chapter" data-level="3.5.2" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#提取資料-2"><i class="fa fa-check"></i><b>3.5.2</b> 提取資料</a></li>
+<li class="chapter" data-level="3.5.3" data-path="chapter3-變數和資料.html"><a href="chapter3-變數和資料.html#基本相關函數-3"><i class="fa fa-check"></i><b>3.5.3</b> 基本相關函數</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html"><i class="fa fa-check"></i><b>4</b> chapter4 - 迴圈和函式</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#if-條件判斷"><i class="fa fa-check"></i><b>4.1</b> if 條件判斷</a><ul>
+<li class="chapter" data-level="" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#if-else-範例"><i class="fa fa-check"></i>if … else …範例</a></li>
+<li class="chapter" data-level="" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#if-else-if-else-範例"><i class="fa fa-check"></i>if … else if … else …範例</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#for-迴圈"><i class="fa fa-check"></i><b>4.2</b> for 迴圈</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#for-迴圈的基本構造"><i class="fa fa-check"></i><b>4.2.1</b> for 迴圈的基本構造</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#function-函式"><i class="fa fa-check"></i><b>4.3</b> function 函式</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#為什麼需要函數"><i class="fa fa-check"></i><b>4.3.1</b> 為什麼需要函數</a></li>
+<li class="chapter" data-level="4.3.2" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#函數組成"><i class="fa fa-check"></i><b>4.3.2</b> 函數組成</a></li>
+<li class="chapter" data-level="4.3.3" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#固定參數"><i class="fa fa-check"></i><b>4.3.3</b> 固定參數</a></li>
+<li class="chapter" data-level="4.3.4" data-path="chapter4-迴圈和函式.html"><a href="chapter4-迴圈和函式.html#訣竅"><i class="fa fa-check"></i><b>4.3.4</b> 訣竅 (?)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter5-資料讀取匯出.html"><a href="chapter5-資料讀取匯出.html"><i class="fa fa-check"></i><b>5</b> chapter5 - 資料讀取/匯出</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter5-資料讀取匯出.html"><a href="chapter5-資料讀取匯出.html#讀取資料"><i class="fa fa-check"></i><b>5.1</b> 讀取資料</a><ul>
+<li class="chapter" data-level="" data-path="chapter5-資料讀取匯出.html"><a href="chapter5-資料讀取匯出.html#範例-4"><i class="fa fa-check"></i>範例</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="chapter5-資料讀取匯出.html"><a href="chapter5-資料讀取匯出.html#輸出資料"><i class="fa fa-check"></i><b>5.2</b> 輸出資料</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html"><i class="fa fa-check"></i><b>6</b> chapter6 - 資料清理</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#資料型別轉換處理"><i class="fa fa-check"></i><b>6.1</b> 資料型別轉換處理</a></li>
+<li class="chapter" data-level="6.2" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#文字字串處理"><i class="fa fa-check"></i><b>6.2</b> 文字字串處理</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#基本處理"><i class="fa fa-check"></i><b>6.2.1</b> 基本處理</a></li>
+<li class="chapter" data-level="6.2.2" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#範例-5"><i class="fa fa-check"></i><b>6.2.2</b> 範例</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#搜尋字串"><i class="fa fa-check"></i><b>6.3</b> 搜尋字串</a></li>
+<li class="chapter" data-level="6.4" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#資料組合"><i class="fa fa-check"></i><b>6.4</b> 資料組合</a></li>
+<li class="chapter" data-level="6.5" data-path="chapter6-資料清理.html"><a href="chapter6-資料清理.html#遺漏值處理"><i class="fa fa-check"></i><b>6.5</b> 遺漏值處理</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter7-視覺化.html"><a href="chapter7-視覺化.html"><i class="fa fa-check"></i><b>7</b> chapter7 視覺化</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter7-視覺化.html"><a href="chapter7-視覺化.html#資料視覺化的目的"><i class="fa fa-check"></i><b>7.1</b> 資料視覺化的目的</a></li>
+<li class="chapter" data-level="7.2" data-path="chapter7-視覺化.html"><a href="chapter7-視覺化.html#ggplot"><i class="fa fa-check"></i><b>7.2</b> GGplot</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R 語言</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter1---介紹" class="section level1">
+<h1><span class="header-section-number">1</span> chapter1 - 介紹</h1>
+<div id="rstdio-介面簡介" class="section level2">
+<h2><span class="header-section-number">1.1</span> Rstdio 介面簡介</h2>
+<blockquote>
+<p>打開 <a href="https://rstudio.com/">Rstudio</a>，會顯示出類似於下面的界面，在常規的菜單欄與工具欄之下，主要有四個窗口，傳言說界面佈局與 MATLAB 非常像，不過我沒用過 MATLAB 所以我也不知道。</p>
+</blockquote>
+<ul>
+<li>Source：用於編輯程式碼（如果未出現該窗口，用快捷 鍵Ctrl+Shift+N 新建一個 Untitled.R）。</li>
+<li>Console：用於輸入命令。</li>
+<li>Environment：為環境窗口，可以暫時簡單理解為查看變量的窗口。(右上)</li>
+<li>History：為歷史窗口，用於查看執行過的歷史紀錄。(右上)</li>
+<li>File：用於查看與管理文件、執行位置。(右下)</li>
+<li>Plot：用於查看輸出的繪圖。(右下)</li>
+<li>Packages：查看套件。(右下)</li>
+<li>Help：查看套件的幫助文檔。(右下)</li>
+</ul>
+<div class="figure">
+<img src="fig/interface2.png" alt="圖 (一)" />
+<p class="caption">圖 (一)</p>
+</div>
+</div>
+<div id="快捷鍵" class="section level2">
+<h2><span class="header-section-number">1.2</span> 快捷鍵</h2>
+<table>
+<thead>
+<tr class="header">
+<th>描述</th>
+<th>快捷鍵</th>
+<th>使用位置</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>清空 Console</td>
+<td>Ctrl + L</td>
+<td>Console</td>
+</tr>
+<tr class="even">
+<td>產生箭頭 &lt;-</td>
+<td>Alt + -</td>
+<td>Source</td>
+</tr>
+<tr class="odd">
+<td>光標定位到 Source</td>
+<td>Ctrl + 1</td>
+<td>任何位置</td>
+</tr>
+<tr class="even">
+<td>光標定位到 Console</td>
+<td>Ctrl + 2</td>
+<td>任何位置</td>
+</tr>
+<tr class="odd">
+<td>新增一個文件 Untitled.R</td>
+<td>Ctrl + Shift + N</td>
+<td>Source</td>
+</tr>
+<tr class="even">
+<td>在 Source 中查找或替換</td>
+<td>Ctrl + F</td>
+<td>任何位置</td>
+</tr>
+</tbody>
+</table>
+<p>以上是我比較常用的快捷鍵，想知道其他的字起去看。<a href="https://www.itread01.com/content/1512972264.html">想知道更多快捷功能請點我</a></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="preface-前言.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter2-基本運算.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
